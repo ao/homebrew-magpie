@@ -29,8 +29,8 @@
 # tells `brew upgrade` to leave it alone unless asked with --greedy. A greedy upgrade still
 # works: the new copy is signed by the same identity, so the Accessibility grant survives.
 cask "magpie" do
-  version "0.1.2"
-  sha256 "9dac4798f8f3a36e52a6477a6a79ef0c15da05aa85c3f679f25af2547108d83d"
+  version "0.1.3"
+  sha256 "2b7b47203736560be6b0ea588ffd135040e3b2bf9b58e2dc12a09f62bde02b2a"
 
   url "https://github.com/ao/homebrew-magpie/releases/download/v#{version}/Magpie.zip"
   name "Magpie"

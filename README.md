@@ -3,6 +3,9 @@
 Clipboard history, a launcher and notes on one keystroke, for macOS 13 (Ventura) or later, on
 Apple silicon and Intel.
 
+**Website: [ataiva.com/products/magpie](https://ataiva.com/products/magpie/)** — screenshots, what
+it does, and how to install it.
+
 This repository is where Magpie's releases are published, and it is also its Homebrew tap. The
 source is not public yet.
 

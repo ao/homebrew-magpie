@@ -35,7 +35,7 @@ cask "magpie" do
   url "https://github.com/ao/homebrew-magpie/releases/download/v#{version}/Magpie.zip"
   name "Magpie"
   desc "Clipboard history, launcher, notes and AI on one keystroke"
-  homepage "https://github.com/ao/homebrew-magpie"
+  homepage "https://ataiva.com/products/magpie/"
 
   livecheck do
     url :url

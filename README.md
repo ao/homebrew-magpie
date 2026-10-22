@@ -29,17 +29,20 @@ Magpie to the Trash rather than deleting it.
 brew tap ao/magpie && brew trust --tap ao/magpie && brew install --cask magpie
 ```
 
+If Homebrew says `trust` is an unknown command, run `brew update` first.
+
 **Disk image:** download `Magpie.dmg` from the [latest release](https://github.com/ao/homebrew-magpie/releases/latest)
 and drag Magpie to Applications. macOS will refuse to open it the first time ("Apple could not
 verify…"): open **System Settings → Privacy & Security** and press **Open Anyway**, once.
 
-## One step after installing: let Magpie paste
+## After installing
 
-Magpie pastes the clip you pick straight into the app you were using, and macOS needs your
-permission for that: **System Settings → Privacy & Security → Accessibility → switch on Magpie.**
-Without it Magpie still records and copies, but you paste with ⌘V yourself.
+Magpie opens with a short tour. It asks for one permission, **Accessibility** (System Settings →
+Privacy & Security → Accessibility → Magpie), so it can paste the clip you pick into the app you
+were using and see a double-tap of ⌘. Without it Magpie still records and copies; you paste with
+⌘V yourself. You grant it once, and every later version keeps it.
 
-You grant this once. Every later version keeps it.
+Then **tap ⌘ twice** from any app to open Magpie, or press **⌃⌘V**.
 
 ## Updates
 
@@ -58,6 +61,8 @@ Anyway.
 
 ## Your data
 
+[Privacy and terms](https://ataiva.com/products/magpie/privacy-and-terms/) has the details.
+
 Everything stays on your Mac, in `~/Library/Application Support/dev.magpie.app`, readable only by
 your user account. Ask AI is off until you turn it on in Settings; until then nothing you copy is
 sent anywhere.
@@ -69,7 +74,9 @@ also removes your history and settings.
 
 ## Feedback
 
-[Open an issue](https://github.com/ao/homebrew-magpie/issues). It helps to include the build line
-from the footer or **Settings → About** (for example `build 00501 · 70b2895`), your macOS version,
+Magpie is an early release, and what gets built next depends on what you say.
+[Open an issue](https://github.com/ao/homebrew-magpie/issues), or email info@ataiva.com. It helps to
+include the build line from the footer or from **About**, in the footer of Magpie's window (for
+example `build 00501 · 70b2895`), your macOS version,
 and whether your Mac is Apple silicon or Intel. The log is at `~/Library/Logs/Magpie/magpie.log`;
 it records what Magpie did, not what you copied.

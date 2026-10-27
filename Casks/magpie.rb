@@ -2,7 +2,7 @@
 
 # Homebrew cask for Magpie — one of the three install routes (docs/distribution.md).
 #
-#   brew tap ao/magpie && brew trust --tap ao/magpie && brew install --cask magpie
+#   brew tap ao/magpie && brew trust --tap ao/magpie && brew install --cask ao/magpie/magpie
 #
 # This file is the source. `scripts/release.sh` renders a copy with the release's version and
 # the SHA-256 of its Magpie.zip into the release artifacts; that copy is what gets committed to

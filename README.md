@@ -26,7 +26,7 @@ Magpie to the Trash rather than deleting it.
 **Homebrew:**
 
 ```sh
-brew tap ao/magpie && brew trust --tap ao/magpie && brew install --cask magpie
+brew tap ao/magpie && brew trust --tap ao/magpie && brew install --cask ao/magpie/magpie
 ```
 
 If Homebrew says `trust` is an unknown command, run `brew update` first.
@@ -69,7 +69,7 @@ sent anywhere.
 
 ## Uninstall
 
-Quit Magpie from its menu bar icon and move it to the Trash. `brew uninstall --zap --cask magpie`
+Quit Magpie from its menu bar icon and move it to the Trash. `brew uninstall --zap --cask ao/magpie/magpie`
 also removes your history and settings.
 
 ## Feedback

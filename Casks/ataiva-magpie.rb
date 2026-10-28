@@ -2,11 +2,11 @@
 
 # Homebrew cask for Magpie — one of the three install routes (docs/distribution.md).
 #
-#   brew tap ao/magpie && brew trust --tap ao/magpie && brew install --cask ao/magpie/magpie
+#   brew tap ao/magpie && brew trust --tap ao/magpie && brew install --cask ao/magpie/ataiva-magpie
 #
 # This file is the source. `scripts/release.sh` renders a copy with the release's version and
 # the SHA-256 of its Magpie.zip into the release artifacts; that copy is what gets committed to
-# Casks/magpie.rb in the tap repository (ao/homebrew-magpie, which is also where the releases
+# Casks/ataiva-magpie.rb in the tap repository (ao/homebrew-magpie, which is also where the releases
 # are published). The `sha256 :no_check` below is therefore never what a user installs.
 #
 # ── Quarantine, and why this cask removes it ─────────────────────────────────────────────────
@@ -28,7 +28,11 @@
 # Updates: Magpie updates itself (tauri-plugin-updater, minisign-signed), so `auto_updates true`
 # tells `brew upgrade` to leave it alone unless asked with --greedy. A greedy upgrade still
 # works: the new copy is signed by the same identity, so the Accessibility grant survives.
-cask "magpie" do
+#
+# The token: `magpie` in Homebrew's own catalogue is an unrelated app, and Homebrew's rule for a
+# name that clashes is the maker's name in front (`caffeine`, `domzilla-caffeine`). The tap's
+# cask_renames.json sends the old `ao/magpie/magpie` here, so installs made under it keep working.
+cask "ataiva-magpie" do
   version "0.1.10"
   sha256 "47ff0637c59f2fda85495844dcbbb84aa3875e50ff4aed995dd68f582e3496a3"
 

@@ -26,10 +26,10 @@ Magpie to the Trash rather than deleting it.
 **Homebrew:**
 
 ```sh
-brew tap ao/magpie && brew trust --tap ao/magpie && brew install --cask ataiva-magpie
+brew update && brew tap ao/magpie && brew trust --tap ao/magpie && brew install --cask ataiva-magpie
 ```
 
-If Homebrew says `trust` is an unknown command, run `brew update` first.
+The `brew update` at the start refreshes Homebrew and the tap, so a copy of the tap added before can't hide the current Magpie.
 
 **Disk image:** download `Magpie.dmg` from the [latest release](https://github.com/ao/homebrew-magpie/releases/latest)
 and drag Magpie to Applications. macOS will refuse to open it the first time ("Apple could not

@@ -33,8 +33,8 @@
 # name that clashes is the maker's name in front (`caffeine`, `domzilla-caffeine`). The tap's
 # cask_renames.json sends the old `ao/magpie/magpie` here, so installs made under it keep working.
 cask "ataiva-magpie" do
-  version "0.2.1"
-  sha256 "2f89bc8ba78c975c9f36d649c1dbf101198426c4abaf1d11a9144436048aa887"
+  version "0.3.0"
+  sha256 "6294bb5952cf0cf6ae2a8872e7961cf42e2b254a95b939fff9aec9a782354ad8"
 
   url "https://github.com/ao/homebrew-magpie/releases/download/v#{version}/Magpie.zip"
   name "Magpie"
